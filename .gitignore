@@ -1,0 +1,52 @@
+HELP.md
+/target/
+/logs/
+**/target/
+*.class
+!.mvn/wrapper/maven-wrapper.jar
+*.flattened-pom.xml
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*/.idea/
+*.iws
+*.iml
+**/*.iml
+*.ipr
+/catalina.base_IS_UNDEFINED/
+/modules/portal/log.root_IS_UNDEFINED
+/LOG_HOME_IS_UNDEFINED/
+/log.root_IS_UNDEFINED/
+/logs/
+log.root_IS_UNDEFINED
+
+### Jrebel ###
+rebel.xml
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+### VS Code ###
+.vscode/
+/jrebel-classpath-14080.jar
+
+### JRebel ###
+*.bak
+/modules/monitor/target/classes/META-INF/monitor.kotlin_module
+/modules/monitor/target/classes/
+/modules/participle/target/classes/
+/modules/timer/jrebel-classpath-2800.jar
