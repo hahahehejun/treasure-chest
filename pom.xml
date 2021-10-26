@@ -12,6 +12,7 @@
         <module>toolkits</module>
         <module>springboot-orms</module>
         <module>dependencies</module>
+        <module>common</module>
     </modules>
 
     <properties>
@@ -23,7 +24,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.demo</groupId>
+                <groupId>com.github.hahahehejun</groupId>
                 <artifactId>dependencies</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
