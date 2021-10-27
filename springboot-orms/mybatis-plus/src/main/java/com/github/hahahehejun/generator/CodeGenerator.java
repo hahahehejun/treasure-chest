@@ -46,24 +46,24 @@ public class CodeGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/base-mybatis/src/main/java");
-        gc.setAuthor("lw");
+        gc.setOutputDir(projectPath + "/springboot-orms/mybatis-plus/src/main/java");
+        gc.setAuthor("wu");
         gc.setOpen(false);
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
         mpg.setGlobalConfig(gc);
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/renren?useUnicode=true&useSSL=false&characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://rm-wz9j5ve65316l79136o.mysql.rds.aliyuncs.com/demo?useUnicode=true&useSSL=false&characterEncoding=utf8");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
-        dsc.setUsername("root");
-        dsc.setPassword("123456");
+        dsc.setUsername("demo_db");
+        dsc.setPassword("ADMIN123admin");
         mpg.setDataSource(dsc);
 
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setModuleName(scanner("模块名"));
-        pc.setParent("com.demo");
+        pc.setParent("com.github.hahahehejun");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -84,7 +84,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "base-mybatis/src/main/resources/mapper/" + pc.getModuleName()
+                return projectPath + "/springboot-orms/mybatis-plus/src/main/resources/mapper/" + pc.getModuleName()
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
@@ -103,17 +103,17 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("com.demo.mabatis.model.BaseModel");
+        //strategy.setSuperEntityClass("com.demo.mabatis.model.BaseModel");
         strategy.setEntityLombokModel(true);
-        strategy.setRestControllerStyle(true);
+        //strategy.setRestControllerStyle(false);
         // 公共父类
-        strategy.setSuperControllerClass("com.demo.controller.BaseController");
+        //strategy.setSuperControllerClass("com.demo.controller.BaseController");
         // 写于父类中的公共字段
         strategy.setSuperEntityColumns("id");
-        strategy.setSuperServiceImplClass("com.demo.mabatis.service.BaseService");
+        //strategy.setSuperServiceImplClass("com.demo.mabatis.service.BaseService");
         strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
         strategy.setControllerMappingHyphenStyle(true);
-        strategy.setTablePrefix(pc.getModuleName() + "_");
+        //strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
