@@ -1,4 +1,4 @@
-package com.github.hahahehejun.test.controller;
+package com.github.hahahehejun.orms.mybatis.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Controller;
  * </p>
  *
  * @author wu
- * @since 2021-10-27
+ * @since 2021-10-28
  */
 @Controller
-@RequestMapping("/test/only-service")
+@RequestMapping("/mybatis/only-service")
 public class OnlyServiceController {
 
 }

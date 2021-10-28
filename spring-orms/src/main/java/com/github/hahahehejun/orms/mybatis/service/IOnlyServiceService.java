@@ -1,6 +1,6 @@
-package com.github.hahahehejun.test.service;
+package com.github.hahahehejun.orms.mybatis.service;
 
-import com.github.hahahehejun.test.entity.OnlyService;
+import com.github.hahahehejun.orms.mybatis.entity.OnlyService;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author wu
- * @since 2021-10-27
+ * @since 2021-10-28
  */
 public interface IOnlyServiceService extends IService<OnlyService> {
 

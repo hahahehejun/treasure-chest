@@ -10,9 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>toolkits</module>
-        <module>springboot-orms</module>
         <module>dependencies</module>
         <module>common</module>
+        <module>spring-orms</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

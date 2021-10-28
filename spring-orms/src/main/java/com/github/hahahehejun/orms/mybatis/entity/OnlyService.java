@@ -1,4 +1,4 @@
-package com.github.hahahehejun.test.entity;
+package com.github.hahahehejun.orms.mybatis.entity;
 
 import java.io.Serializable;
 import lombok.Data;
@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author wu
- * @since 2021-10-27
+ * @since 2021-10-28
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
