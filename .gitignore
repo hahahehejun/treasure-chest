@@ -5,6 +5,7 @@ HELP.md
 *.class
 !.mvn/wrapper/maven-wrapper.jar
 *.flattened-pom.xml
+**/application-local.yml
 
 ### STS ###
 .apt_generated

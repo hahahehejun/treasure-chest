@@ -13,6 +13,7 @@
         <module>dependencies</module>
         <module>common</module>
         <module>spring-orms</module>
+        <module>spring-mq</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
