@@ -9,6 +9,10 @@ My treasure chest.....    codeing
 ## dependencies
 全局依赖版本管理
 
+## spring-component
+spring相关组件
+- aop spring-aop切面使用
+
 ## spring-orms
 orm框架demo集合
 
