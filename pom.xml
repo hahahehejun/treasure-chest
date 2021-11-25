@@ -15,6 +15,7 @@
         <module>spring-orms</module>
         <module>spring-mq</module>
         <module>spring-component</module>
+        <module>jdk-component</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
