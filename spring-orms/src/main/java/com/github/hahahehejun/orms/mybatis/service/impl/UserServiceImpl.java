@@ -1,8 +1,8 @@
-package com.github.hahahehejun.orms.user.service.impl;
+package com.github.hahahehejun.orms.mybatis.service.impl;
 
-import com.github.hahahehejun.orms.user.entity.User;
-import com.github.hahahehejun.orms.user.mapper.UserMapper;
-import com.github.hahahehejun.orms.user.service.IUserService;
+import com.github.hahahehejun.orms.mybatis.entity.User;
+import com.github.hahahehejun.orms.mybatis.mapper.UserMapper;
+import com.github.hahahehejun.orms.mybatis.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

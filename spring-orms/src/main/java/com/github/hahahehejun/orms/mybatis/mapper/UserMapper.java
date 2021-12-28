@@ -1,6 +1,6 @@
-package com.github.hahahehejun.orms.user.mapper;
+package com.github.hahahehejun.orms.mybatis.mapper;
 
-import com.github.hahahehejun.orms.user.entity.User;
+import com.github.hahahehejun.orms.mybatis.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

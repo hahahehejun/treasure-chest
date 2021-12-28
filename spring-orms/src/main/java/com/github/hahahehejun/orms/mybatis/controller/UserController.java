@@ -1,4 +1,4 @@
-package com.github.hahahehejun.orms.user.controller;
+package com.github.hahahehejun.orms.mybatis.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Controller;
  * @since 2021-12-28
  */
 @Controller
-@RequestMapping("/user/user")
+@RequestMapping("/mybatis/user")
 public class UserController {
 
 }
