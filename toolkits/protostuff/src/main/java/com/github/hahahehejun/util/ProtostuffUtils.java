@@ -20,7 +20,6 @@ public class ProtostuffUtils {
     //序列化方法，把指定对象序列化成字节数组
     @SuppressWarnings("unchecked")
     public static <T> byte[] serialize(T obj) {
-
         LinkedBuffer buffer;
         if (localBuffer.get()==null){
             buffer  = LinkedBuffer.allocate(LinkedBuffer.DEFAULT_BUFFER_SIZE);
