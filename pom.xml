@@ -16,6 +16,7 @@
         <module>spring-mq</module>
         <module>spring-component</module>
         <module>jdk-component</module>
+        <module>netty</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
